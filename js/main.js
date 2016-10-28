@@ -14,13 +14,13 @@ function get_jsonp(text) {
  $('#send').click(function(){
    var text = $('#info').val();
    $('#info').val('');
-   var p = "<p style = 'text-align:right'>"+text+'</p>';
+   var p = "<p class='me'><span>"+text+'</span></p>';
    $('#chat').append(p);
    $('#chat').scrollTop( $('#chat')[0].scrollHeight );
     get_jsonp(text);
  })
  function show(data){
-   var p = "<p  style = 'text-align:left'>"+data.result.text+'</p>';
+   var p = "<p class='robot'><span>"+data.result.text+'</span></p>';
    $('#chat').append(p);
    $('#chat').scrollTop( $('#chat')[0].scrollHeight );
  }

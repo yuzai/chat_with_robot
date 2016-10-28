@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>My robot</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <h4 style='text-align:center'>a robot chat machine</h4>
     <div class='container' style='text-align:center'>
-        <div class='well'>
-            <div id='chat' class = 'well'style='margin:0 30%;height:500px;overflow:auto'>
-            </div>
-            <div style='margin:0 30%'>
+        <div class='row'>
+            <div class='well col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1'>
+                <div id='chat'>
+                </div>
                 <div style='text-align:right'>
                     <input type="text" id='info'>
                     <button type="submit" id='send'>发送</button>
