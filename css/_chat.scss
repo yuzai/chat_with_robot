@@ -1,0 +1,28 @@
+$height: 500px;
+$mecolor:#b2e281;
+$backcolor:#EEEEEE;
+#chat{
+  background: $backcolor;
+  height:$height;
+  overflow:auto;
+  .me{
+    margin:10px;
+    margin-left:30%;
+    text-align:right;
+    span{
+      border-radius: 5px;
+      padding:7px;
+      background:$mecolor;
+    }
+  }
+  .robot{
+    margin:10px;
+    margin-right:30%;
+    text-align:left;
+    span{
+     border-radius: 5px;
+     padding:7px;
+     background:white;
+   }
+  }
+}

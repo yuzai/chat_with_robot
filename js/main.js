@@ -11,16 +11,21 @@ function get_jsonp(text) {
          if(key == 13)
            $('#send').trigger("click");
      });
+var pre_time;
  $('#send').click(function(){
+   var d=new Date();
+   var p="<div><span>"+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()+'</span></div>';
+   pre_time = d;
+   $('#chat').append(p);
    var text = $('#info').val();
    $('#info').val('');
-   var p = "<p class='me'><span>"+text+'</span></p>';
+   var p = "<div class='me'><span>"+text+'</span></div>';
    $('#chat').append(p);
    $('#chat').scrollTop( $('#chat')[0].scrollHeight );
     get_jsonp(text);
  })
  function show(data){
-   var p = "<p class='robot'><span>"+data.result.text+'</span></p>';
+   var p = "<div class='robot'><span>"+data.result.text+'</span></div>';
    $('#chat').append(p);
    $('#chat').scrollTop( $('#chat')[0].scrollHeight );
  }
