@@ -1,24 +1,30 @@
-#chat{
-  height:500px;
-  overflow:auto;
+#chat {
+    height: 500px;
+    overflow: auto;
 }
-#chat .me{
-  margin:10px;
-  margin-left:30%;
-  text-align:right;
+
+#chat .me {
+    margin: 10px;
+    margin-left: 30%;
+    text-align: right;
 }
-#chat .me span{
-  border-radius: 5px;
-  padding:7px;
-  background:green;
+
+#chat .me span {
+    border-radius: 5px;
+    padding: 7px;
+    background: green;
 }
-#chat .robot{
-  margin:10px;
-  margin-right:30%;
-  text-align:left;
+
+#chat .robot {
+    margin: 10px;
+    margin-right: 30%;
+    text-align: left;
 }
-#chat .robot span{
-  border-radius: 5px;
-  padding:7px;
-  background:blue;
+
+#chat .robot span {
+    border-radius: 5px;
+    padding: 7px;
+    background: blue;
 }
+
+/*# sourceMappingURL=style.css.map */

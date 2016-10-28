@@ -1,0 +1,24 @@
+#chat{
+  height:500px;
+  overflow:auto;
+  .me{
+    margin:10px;
+    margin-left:30%;
+    text-align:right;
+    span{
+      border-radius: 5px;
+      padding:7px;
+      background:green;
+    }
+  }
+  .robot{
+    margin:10px;
+    margin-right:30%;
+    text-align:left;
+    span{
+     border-radius: 5px;
+     padding:7px;
+     background:blue;
+   }
+  }
+}
