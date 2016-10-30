@@ -9,7 +9,8 @@ $backcolor:#EEEEEE;
     margin:10px;
     margin-left:30%;
     text-align:right;
-    span{
+    div{
+      display:inline-block;
       border-radius: 5px;
       padding:7px;
       background:$mecolor;
@@ -19,7 +20,8 @@ $backcolor:#EEEEEE;
     margin:10px;
     margin-right:30%;
     text-align:left;
-    span{
+    div{
+     display:inline-block;
      border-radius: 5px;
      padding:7px;
      background:white;
