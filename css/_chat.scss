@@ -3,7 +3,7 @@ $mecolor:#b2e281;
 $backcolor:#EEEEEE;
 #chat{
   background: $backcolor;
-  height:$height;
+  min-height:$height;
   overflow:auto;
   .me{
     margin:10px;
