@@ -8,8 +8,20 @@ $backcolor:#EEEEEE;
   .me{
     margin:10px;
     margin-left:30%;
+    margin-right:5%;
     text-align:right;
-    div{
+    position:relative;
+    .qipao{
+      position:absolute;
+      width:0;
+      height:0;
+      border-width:4px;
+      border-style:solid;
+      border-color:transparent transparent transparent $mecolor;
+      right:-8px;
+      top:11px;
+    }
+    div.item{
       display:inline-block;
       border-radius: 5px;
       padding:7px;
@@ -20,11 +32,30 @@ $backcolor:#EEEEEE;
     margin:10px;
     margin-right:30%;
     text-align:left;
-    div{
+    margin-left:5%;
+    position:relative;
+    .qipao{
+      position:absolute;
+      width:0;
+      height:0;
+      border-width:4px;
+      border-style:solid;
+      border-color:transparent white transparent transparent;
+      left:-8px;
+      top:11px;
+    }
+    div.item{
      display:inline-block;
      border-radius: 5px;
      padding:7px;
      background:white;
    }
   }
+}
+#test{
+  width:0;
+  height:0;
+  border-width:100px;
+  border-style:solid;
+  border-color:transparent transparent transparent $mecolor;
 }

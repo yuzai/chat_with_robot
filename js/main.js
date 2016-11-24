@@ -37,14 +37,14 @@ $('#send').click(function() {
     $('#send').css({
         background: 'white'
     });
-    var p = "<div class='me'><div>" + text + '</div></div>';
+    var p = "<div class='me'><div class='qipao'></div><div class='item'>" + text + '</div></div>';
     $('#chat').append(p);
     $('#chat').scrollTop($('#chat')[0].scrollHeight);
     get_jsonp(text);
 })
 
 function show(data) {
-    var p = "<div class='robot'><div>" + data.result.text + '</div></div>';
+    var p = "<div class='robot'><div class='qipao'></div><div class='item'>" + data.result.text + '</div></div>';
     $('#chat').append(p);
     $('#chat').scrollTop($('#chat')[0].scrollHeight);
 }

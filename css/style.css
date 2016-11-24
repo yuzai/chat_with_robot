@@ -1,12 +1,23 @@
 #chat {
   background: #EEEEEE;
-  height: 500px;
+  min-height: 500px;
   overflow: auto; }
   #chat .me {
     margin: 10px;
     margin-left: 30%;
-    text-align: right; }
-    #chat .me div {
+    margin-right: 5%;
+    text-align: right;
+    position: relative; }
+    #chat .me .qipao {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 4px;
+      border-style: solid;
+      border-color: transparent transparent transparent #b2e281;
+      right: -8px;
+      top: 11px; }
+    #chat .me div.item {
       display: inline-block;
       border-radius: 5px;
       padding: 7px;
@@ -14,12 +25,30 @@
   #chat .robot {
     margin: 10px;
     margin-right: 30%;
-    text-align: left; }
-    #chat .robot div {
+    text-align: left;
+    margin-left: 5%;
+    position: relative; }
+    #chat .robot .qipao {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 4px;
+      border-style: solid;
+      border-color: transparent white transparent transparent;
+      left: -8px;
+      top: 11px; }
+    #chat .robot div.item {
       display: inline-block;
       border-radius: 5px;
       padding: 7px;
       background: white; }
+
+#test {
+  width: 0;
+  height: 0;
+  border-width: 100px;
+  border-style: solid;
+  border-color: transparent transparent transparent #b2e281; }
 
 @font-face {
   font-family: myFirstFont;
