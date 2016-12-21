@@ -44,7 +44,6 @@ $('#send').click(function() {
 })
 
 function show(data) {
-  console.log(data);
     var p = "<div class='robot'><div class='qipao'></div><div class='item'>" + data.reason.text + '</div></div>';
     $('#chat').append(p);
     $('#chat').scrollTop($('#chat')[0].scrollHeight);
