@@ -1,7 +1,7 @@
 function get_jsonp(text) {
     $.getJSON("http://op.juhe.cn/robot/index?callback=?", {
         "info": text,
-        "dtype": "json",
+        "dtype": "jsonp",
         "key": "5886c0226172025122705c2d5a3f1278",
         "userid": 111
     }, show);
@@ -44,7 +44,8 @@ $('#send').click(function() {
 })
 
 function show(data) {
-    var p = "<div class='robot'><div class='qipao'></div><div class='item'>" + data.result.text + '</div></div>';
+  console.log(data);
+    var p = "<div class='robot'><div class='qipao'></div><div class='item'>" + data.reason.text + '</div></div>';
     $('#chat').append(p);
     $('#chat').scrollTop($('#chat')[0].scrollHeight);
 }
