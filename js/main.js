@@ -1,6 +1,7 @@
 function get_jsonp(text) {
-    $.get("http://op.juhe.cn/robot/index", {
+    $.getJSON("http://op.juhe.cn/robot/index?callback=?", {
         "info": text,
+        
         "key": "5886c0226172025122705c2d5a3f1278",
         "userid": 111
     }, show);
