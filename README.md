@@ -7,4 +7,4 @@ a robot talker
 jQuery,bootstrap,nodejs
 
 ## 技术难题
-跨域问题，聚合数据的访问属于跨域，刚开始是通过jQuery的jsonp方法解决，但是后来聚合数据的服务器端不支持callback,所以我采用了架设中间服务器的方法来完成跨域的访问，中间服务器和本页面的跨域问题采用cors的方法解决，从而完成跨域通信，中间服务器架设在Herku,服务器的页面在[这里](https://robotser.herokuapp.com/)
+跨域问题，聚合数据的访问属于跨域，刚开始是通过jQuery的jsonp方法解决，但是后来聚合数据的服务器端不支持callback,所以我采用了架设中间服务器的方法来完成跨域的访问，中间服务器和本页面的跨域问题采用cors的方法解决，从而完成跨域通信，中间服务器架设在Herku,服务器的页面在[这里](https://robotser.herokuapp.com/)，服务器的源码在[这里](https://github.com/yuzai/-/blob/master/js_cors/server/server.js)
