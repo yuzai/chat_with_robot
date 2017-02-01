@@ -1,10 +1,16 @@
 function get_jsonp(text) {
-    $.getJSON("http://op.juhe.cn/robot/index?callback=?", {
-        "info": text,
-        
-        "key": "5886c0226172025122705c2d5a3f1278",
-        "userid": 111
-    }, show);
+    $.get("https://robotser.herokuapp.com/robot", {
+         "info" : text,
+         "dtype" : "json",
+         "key" : "5886c0226172025122705c2d5a3f1278",
+         "userid":111
+     }, show);
+    // var jsonp = document.createElement('script');
+    // jsonp.src = 'http://op.juhe.cn/robot/index?callback=show'+'&info='+text+'&key=5886c0226172025122705c2d5a3f1278&userid=111';
+    // document.body.appendChild(jsonp);
+    // $.getScript('http://op.juhe.cn/robot/index?callback=show'+'&info='+text+'&key=5886c0226172025122705c2d5a3f1278&userid=111',function(data){
+    // 	console.log(data);
+    // })
 }
 $('#info').keyup(function(e) {
     var key = e.which;
@@ -44,8 +50,8 @@ $('#send').click(function() {
 })
 
 function show(data) {
-    // console.log(data);
-    var p = "<div class='robot'><div class='qipao'></div><div class='item'>" + data.reason.text + '</div></div>';
+    data = JSON.parse(data);
+    var p = "<div class='robot'><div class='qipao'></div><div class='item'>" + data.result.text + '</div></div>';
     $('#chat').append(p);
     $('#chat').scrollTop($('#chat')[0].scrollHeight);
 }
