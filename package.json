@@ -1,0 +1,25 @@
+{
+  "name": "robot",
+  "version": "1.0.0",
+  "description": "a robot talker\r ## 简介\r 这个项目主要是练习ajax通信，界面是模仿微信的聊天界面，机器人的回复数据来自于[聚合数据](https://www.juhe.cn/docs/api/id/112)，demo is [here](http://blog.xiaoboma.com/chat_with_robot/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuzai/chat_with_robot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuzai/chat_with_robot/issues"
+  },
+  "homepage": "https://github.com/yuzai/chat_with_robot#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
