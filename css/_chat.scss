@@ -1,61 +1,112 @@
-$height: 500px;
+$height: 13.33rem;
 $mecolor:#b2e281;
 $backcolor:#EEEEEE;
+@mixin font-dpr($font-size){
+    font-size: $font-size;
+
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
 #chat{
+
   background: $backcolor;
-  min-height:$height;
+  // min-height:$height;
   overflow:auto;
+  h1{
+  	@include font-dpr(17px);
+  	margin-top:.27rem;
+  	margin-bottom:.27rem;
+  	text-align:center;
+  }
+  hr{
+    margin:.53rem 0;
+  }
+  .clock{
+    text-align: center;
+  }
+  .clock>span{
+    @include font-dpr(14px);
+  }
+  text-align:right;
   .me{
-    margin:10px;
-    margin-left:30%;
-    margin-right:5%;
-    text-align:right;
+    margin:.27rem;
+    margin-left:3rem;
+    margin-right:.5rem;
+    display:inline-block;
     position:relative;
+    text-align:left;
     .qipao{
       position:absolute;
       width:0;
       height:0;
-      border-width:4px;
+      border-width:.11rem;
       border-style:solid;
       border-color:transparent transparent transparent $mecolor;
-      right:-8px;
-      top:11px;
+      right:-.21rem;
+      top:.29rem;
     }
     div.item{
+      @include font-dpr(17px);
+      color:black;
       display:inline-block;
-      border-radius: 5px;
-      padding:7px;
+      border-radius: .13rem;
+      padding:.19rem;
       background:$mecolor;
     }
   }
   .robot{
-    margin:10px;
-    margin-right:30%;
+    margin:.27rem;
+    margin-right:3rem;
     text-align:left;
-    margin-left:5%;
+    margin-left:.5rem;
     position:relative;
     .qipao{
       position:absolute;
       width:0;
       height:0;
-      border-width:4px;
+      border-width:.11rem;
       border-style:solid;
       border-color:transparent white transparent transparent;
-      left:-8px;
-      top:11px;
+      left:-.21rem;
+      top:.29rem;
     }
     div.item{
+     @include font-dpr(17px);
      display:inline-block;
-     border-radius: 5px;
-     padding:7px;
+     border-radius: .13rem;
+     padding:.19rem;
      background:white;
    }
   }
 }
-#test{
-  width:0;
-  height:0;
-  border-width:100px;
-  border-style:solid;
-  border-color:transparent transparent transparent $mecolor;
+#type{
+  z-index:3;
+  height:.69rem;
+  background-color: $backcolor;
+  #info{
+    margin-left:.1rem;
+    width:8.45rem;
+    height:inherit;
+    // height:.69rem;
+    @include font-dpr(17px);
+    line-height: .53rem;
+    padding:.03rem 0;
+    box-sizing: border-box;
+    font-family:inherit;
+  }
+  #send{
+    @include font-dpr(17px);
+    width:1.17rem;
+    height:inherit;
+    // background-color: buttonface;
+    // height:.69rem;
+    padding:.03rem 0;
+    box-sizing: border-box;
+    font-family:inherit;
+  }
 }

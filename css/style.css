@@ -1,58 +1,127 @@
 #chat {
   background: #EEEEEE;
-  min-height: 500px;
-  overflow: auto; }
+  overflow: auto;
+  text-align: right; }
+  #chat h1 {
+    font-size: 17px;
+    margin-top: .27rem;
+    margin-bottom: .27rem;
+    text-align: center; }
+    [data-dpr="2"] #chat h1 {
+      font-size: 34px; }
+    [data-dpr="3"] #chat h1 {
+      font-size: 51px; }
+  #chat hr {
+    margin: .53rem 0; }
+  #chat .clock {
+    text-align: center; }
+  #chat .clock > span {
+    font-size: 14px; }
+    [data-dpr="2"] #chat .clock > span {
+      font-size: 28px; }
+    [data-dpr="3"] #chat .clock > span {
+      font-size: 42px; }
   #chat .me {
-    margin: 10px;
-    margin-left: 30%;
-    margin-right: 5%;
-    text-align: right;
-    position: relative; }
+    margin: .27rem;
+    margin-left: 3rem;
+    margin-right: .5rem;
+    display: inline-block;
+    position: relative;
+    text-align: left; }
     #chat .me .qipao {
       position: absolute;
       width: 0;
       height: 0;
-      border-width: 4px;
+      border-width: .11rem;
       border-style: solid;
       border-color: transparent transparent transparent #b2e281;
-      right: -8px;
-      top: 11px; }
+      right: -.21rem;
+      top: .29rem; }
     #chat .me div.item {
+      font-size: 17px;
+      color: black;
       display: inline-block;
-      border-radius: 5px;
-      padding: 7px;
+      border-radius: .13rem;
+      padding: .19rem;
       background: #b2e281; }
+      [data-dpr="2"] #chat .me div.item {
+        font-size: 34px; }
+      [data-dpr="3"] #chat .me div.item {
+        font-size: 51px; }
   #chat .robot {
-    margin: 10px;
-    margin-right: 30%;
+    margin: .27rem;
+    margin-right: 3rem;
     text-align: left;
-    margin-left: 5%;
+    margin-left: .5rem;
     position: relative; }
     #chat .robot .qipao {
       position: absolute;
       width: 0;
       height: 0;
-      border-width: 4px;
+      border-width: .11rem;
       border-style: solid;
       border-color: transparent white transparent transparent;
-      left: -8px;
-      top: 11px; }
+      left: -.21rem;
+      top: .29rem; }
     #chat .robot div.item {
+      font-size: 17px;
       display: inline-block;
-      border-radius: 5px;
-      padding: 7px;
+      border-radius: .13rem;
+      padding: .19rem;
       background: white; }
+      [data-dpr="2"] #chat .robot div.item {
+        font-size: 34px; }
+      [data-dpr="3"] #chat .robot div.item {
+        font-size: 51px; }
 
-#test {
-  width: 0;
-  height: 0;
-  border-width: 100px;
-  border-style: solid;
-  border-color: transparent transparent transparent #b2e281; }
+#type {
+  z-index: 3;
+  height: .69rem;
+  background-color: #EEEEEE; }
+  #type #info {
+    margin-left: .1rem;
+    width: 8.45rem;
+    height: inherit;
+    font-size: 17px;
+    line-height: .53rem;
+    padding: .03rem 0;
+    box-sizing: border-box;
+    font-family: inherit; }
+    [data-dpr="2"] #type #info {
+      font-size: 34px; }
+    [data-dpr="3"] #type #info {
+      font-size: 51px; }
+  #type #send {
+    font-size: 17px;
+    width: 1.17rem;
+    height: inherit;
+    padding: .03rem 0;
+    box-sizing: border-box;
+    font-family: inherit; }
+    [data-dpr="2"] #type #send {
+      font-size: 34px; }
+    [data-dpr="3"] #type #send {
+      font-size: 51px; }
 
 @font-face {
   font-family: myFirstFont;
   src: url(../fonts/Artifika-Regular.ttf); }
 
 body {
-  font-family: myFirstFont,DFKai-SB; }
+  font-family: -apple-system,myFirstFont,Helvetica Neue,Arial,Neo Heiti,sans-serif,Helvetica; }
+
+.forkme {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index: 1;
+  width: 3.97rem;
+  height: 3.97rem; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
+
+#chat {
+  flex-grow: 1; }

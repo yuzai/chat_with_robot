@@ -3,23 +3,25 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
     <title>My robot</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/flexible_css.js"></script>
+    <script src="js/flexible.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <a href="https://github.com/yuzai"><img style="position: absolute; top: 0; right: 0; border: 0;z-index:1;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
-    <div class='container' style='text-align:center;'>
-        <div class='row'>
-            <div class='col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0' style='padding:0;' >
+    <a href="https://github.com/yuzai"><img class='forkme' src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+    <div>
+        <div>
+            <div class='container'>
                 <div id='chat'>
-                  <h4 style='text-align:center'>a robot chat machine</h4>
+                  <h1>a robot chat machine</h1>
                   <hr style = 'border-color:grey'>
                 </div>
-                <div>
+                <div id='type'>
                     <input type="text" id='info'>
                     <button type="submit" id='send'>发送</button>
                 </div>
@@ -27,7 +29,6 @@
         </div>
     </div>
     <script src="js/zepto.min.js"></script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src='js/main.js'></script>
 </body>
 
