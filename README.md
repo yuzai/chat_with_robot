@@ -1,10 +1,13 @@
 # chat_with_robot
 a robot talker
 ## 简介
-这个项目主要是练习ajax通信，界面是模仿微信的聊天界面，机器人的回复数据来自于[聚合数据](https://www.juhe.cn/docs/api/id/112)，demo is [here](http://blog.xiaoboma.com/chat_with_robot/)
+这个dev分支主要是对之前的作品进行移动端适配，之前的[页面](https://github.com/yuzai/chat_with_robot/tree/master)主要是采用bootstrap进行响应式布局，最近阅读了手淘的rem适配以及一些移动端的知识，对这个项目进行了改版。
 
 ## 技术栈
-jQuery,bootstrap,nodejs
+flexible,sass,zepto,node+heroku部署中间服务器来使得ajax跨域
 
-## 技术难题
-跨域问题，聚合数据的访问属于跨域，刚开始是通过jQuery的jsonp方法解决，但是后来聚合数据的服务器端不支持callback,所以我采用了架设中间服务器的方法来完成跨域的访问，中间服务器和本页面的跨域问题采用cors的方法解决，从而完成跨域通信，中间服务器架设在Herku,服务器的页面在[这里](https://robotser.herokuapp.com/)
+## 改进
+1. 手淘rem修改：利用flexible，动态检测和设置initial-scale,html的font-size，页面中的宽度高度采用rem来进行设置，达到适配移动端页面的效果
+2. 采用flex布局，减少js的操控
+3. 采用H5,mainfest离线缓存，实现应用的离线访问
+4. 抛弃bootstrap,jquery，改用zepto实现一些简单的dom选择（事实上zepto也可以抛弃，只是做了简单的元素选择和事件绑定）
