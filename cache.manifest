@@ -1,0 +1,16 @@
+CACHE MANIFEST
+#上面一句必须
+#v1.0.1
+#需要缓存的文件
+CACHE:
+css/style.css
+js/main.js
+js/flexible_css.js
+js/flexible.js
+js/zepto.min.js
+#不需要缓存的文件
+NETWORK:
+*
+#无法访问页面
+FALLBACK:
+404.html

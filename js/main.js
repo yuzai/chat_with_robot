@@ -95,4 +95,14 @@ $(document).ready(function() {
         });
     }
     change_height();
+    window.applicationCache.addEventListener('updateready',function(e){
+      console.log('有更新了');
+    if(window.applicationCache.status == window.applicationCache.UPDATEREADY){
+        window.applicationCache.swapCache();
+
+        if(confirm("loding new?")){
+            window.location.reload()
+        }
+    }
+    },false)
 })

@@ -21,4 +21,4 @@ gulp.task('sass:watch',function(){
 	gulp.watch('css/*.scss',['testsass']);
 });
 
-gulp.task('default',['testsass','sass:watch']);
+gulp.task('default',['browser-sync','testsass','sass:watch']);
