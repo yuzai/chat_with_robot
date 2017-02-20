@@ -87,7 +87,6 @@ $(document).ready(function() {
             }
         }
     }
-    EventUtil.addHandler(window, 'resize', change_height);
 
     function change_height() {
         $('.container').css({

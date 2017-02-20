@@ -80,7 +80,8 @@
   z-index: 3;
   height: .69rem;
   background-color: #EEEEEE;
-  display: flex; }
+  display: flex;
+  justify-content: space-around; }
   #type #info {
     margin-left: .1rem;
     width: 8.45rem;
@@ -89,7 +90,8 @@
     line-height: .53rem;
     padding: .03rem 0;
     box-sizing: border-box;
-    font-family: inherit; }
+    font-family: inherit;
+    flex-grow: 1; }
     [data-dpr="2"] #type #info {
       font-size: 34px; }
     [data-dpr="3"] #type #info {

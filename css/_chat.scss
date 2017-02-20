@@ -91,6 +91,7 @@ $backcolor:#EEEEEE;
   height:.69rem;
   background-color: $backcolor;
   display:flex;
+  justify-content: space-around;
   #info{
     margin-left:.1rem;
     width:8.45rem;
@@ -101,6 +102,7 @@ $backcolor:#EEEEEE;
     padding:.03rem 0;
     box-sizing: border-box;
     font-family:inherit;
+    flex-grow: 1;
   }
   #send{
     @include font-dpr(17px);
@@ -111,5 +113,6 @@ $backcolor:#EEEEEE;
     padding:.03rem 0;
     box-sizing: border-box;
     font-family:inherit;
+
   }
 }
