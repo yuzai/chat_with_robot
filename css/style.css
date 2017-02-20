@@ -79,7 +79,8 @@
 #type {
   z-index: 3;
   height: .69rem;
-  background-color: #EEEEEE; }
+  background-color: #EEEEEE;
+  display: flex; }
   #type #info {
     margin-left: .1rem;
     width: 8.45rem;

@@ -105,4 +105,16 @@ $(document).ready(function() {
         }
     }
     },false)
+    function deviceinfo(){
+      var a = document.createElement('div');
+      a.innerHTML = '<p>devicePixelRatio:'+devicePixelRatio+'</p>'+
+                    '<p>screen.width:'+screen.width+'</p>'+
+                    '<p>screen.height:'+screen.height+'</p>'+
+                    '<p>innerWidth:'+innerWidth+'</p>'+
+                    '<p>innerHeight:'+innerHeight+'</p>'+
+                    '<p>clientWidth:'+document.documentElement.clientWidth+'</p>'+
+                    '<p>clientHeight:'+document.documentElement.clientHeight+'</p>'
+     document.body.appendChild(a);
+    }
+    deviceinfo()
 })
