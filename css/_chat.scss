@@ -36,7 +36,7 @@ $backcolor:#EEEEEE;
   .me{
     margin:.27rem;
     margin-left:3rem;
-    // margin-right:.5rem;
+    margin-right:.5rem;
     display:inline-block;
     position:relative;
     text-align:left;
@@ -44,10 +44,11 @@ $backcolor:#EEEEEE;
       position:absolute;
       width:0;
       height:0;
-      border-width:.11rem;
+      border-width:.15rem;
       border-style:solid;
       border-color:transparent transparent transparent $mecolor;
-      right:-.21rem;
+      right:0;
+      transform:translateX(100%);
       top:.29rem;
     }
     div.item{
@@ -69,10 +70,11 @@ $backcolor:#EEEEEE;
       position:absolute;
       width:0;
       height:0;
-      border-width:.11rem;
+      border-width:.15rem;
       border-style:solid;
       border-color:transparent white transparent transparent;
-      left:-.21rem;
+      left:0;
+      transform:translateX(-100%);
       top:.29rem;
     }
     div.item{

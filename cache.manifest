@@ -1,6 +1,6 @@
 CACHE MANIFEST
 #上面一句必须
-#v1.0.5
+#v1.1.0
 #需要缓存的文件
 CACHE:
 css/style.css

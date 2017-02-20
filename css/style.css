@@ -24,6 +24,7 @@
   #chat .me {
     margin: .27rem;
     margin-left: 3rem;
+    margin-right: .5rem;
     display: inline-block;
     position: relative;
     text-align: left; }
@@ -31,10 +32,11 @@
       position: absolute;
       width: 0;
       height: 0;
-      border-width: .11rem;
+      border-width: .15rem;
       border-style: solid;
       border-color: transparent transparent transparent #b2e281;
-      right: -.21rem;
+      right: 0;
+      transform: translateX(100%);
       top: .29rem; }
     #chat .me div.item {
       font-size: 17px;
@@ -57,10 +59,11 @@
       position: absolute;
       width: 0;
       height: 0;
-      border-width: .11rem;
+      border-width: .15rem;
       border-style: solid;
       border-color: transparent white transparent transparent;
-      left: -.21rem;
+      left: 0;
+      transform: translateX(-100%);
       top: .29rem; }
     #chat .robot div.item {
       font-size: 17px;
