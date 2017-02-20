@@ -44,7 +44,7 @@ $(document).ready(function() {
         $('#send').css({
             background: 'white'
         });
-        var p = "<div class='me'><div class='qipao'></div><div class='item'>" + text + '</div></div>';
+        var p = "<div class='me'><div class='qipao'></div><div class='item'>" + text + '</div></div><br>';
         $('#chat').append(p);
         $('#chat').scrollTop($('#chat')[0].scrollHeight);
         get_jsonp(text);
